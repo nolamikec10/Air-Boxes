@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRBOX Hosting Provider</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            color: #000000;
+            line-height: 1.6;
+        }
+        
+         
+        header {
+            background-color: #000000;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 120%; 
+            font-weight: bold; 
+            background: linear-gradient(to bottom, #418ee0, #e62ef7); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            text-fill-color: transparent;
+            -webkit-text-stroke: 0.007em rgb(255, 0, 0); 
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li{
+            margin-left: 20px;
+        }
+        
+        nav ul li{
+            color: white;
+            text-decoration: none;
+        }
+        
+         
+        .hero {
+            background-color: #282842;
+            color: rgb(255, 255, 255);
+            padding: 50px 10%;
+            text-align: center;
+        }
+        
+        .hero h3 {
+            font-size: 170%; 
+            font-weight: bold; 
+            background: linear-gradient(to bottom, #418ee0, #e62ef7); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            text-fill-color: transparent; 
+            -webkit-text-stroke: 0.005em rgb(255, 0, 0)
+            
+
+        }
+        
+        .hero h2 {
+            font-size: 300%; 
+            font-weight: bold; 
+            background: linear-gradient(to bottom, #418ee0, #e62ef7); 
+            -webkit-background-clip: text;  */
+            -webkit-text-fill-color: transparent; 
+            text-fill-color: transparent;
+            -webkit-text-stroke: 0.005em rgb(255, 255, 255); 
+        }
+        
+        .hero h4 {
+            font-size: 120%; 
+            font-weight: bold; 
+            background: linear-gradient(to bottom, #418ee0, #e62ef7); 
+            -webkit-background-clip: text;  */
+            -webkit-text-fill-color: transparent; 
+            text-fill-color: transparent; 
+        }
+        
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #418ee0;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        
+        .features {
+            background-color: #418ee0;
+            padding: 65px 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .feature {
+            text-align: center;
+            width: 75%;
+        }
+        .features2 {
+            background-color: #868194;
+            padding: 65px 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .feature2 {
+            text-align: center;
+            width: 75%;
+        }
+        .feature-icon {
+            width: 2px;
+            height: 2px;
+            background-color: #418ee0;
+            border-radius: 50%;
+            margin: 0 auto 85px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 400%
+        }
+        
+        .feature h3 {
+            margin-bottom: 500px;
+        }
+        
+         
+        .pricing {
+            padding: 40px 5%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+        .plan {
+            width: 23%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .plan-header {
+            background-color: #3696fc;
+            background: linear-gradient(to bottom, #418ee0, #e62ef7);
+            -webkit-text-stroke: 0.005em rgb(255, 255, 255);
+
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .plan-price {
+            background-color: #d1d1dc;
+            padding: 5px;
+            text-align: center;
+            font-size: 120%;
+            font-weight: bold; position: relative; 
+        }
+        .plan-price ::after {
+            content: "";
+            position: absolute;
+            bottom: -50%; 
+            left: 50%;
+            transform: translateX(-50%); 
+            border-left: 30px solid transparent; 
+            border-right: 30px solid transparent;
+            border-top: 25px solid #d1d1dc; 
+            
+}
+
+        
+        .plan-price span {
+            font-size: 85%;
+            font-weight: normal;
+            opacity: 0.7;
+        }
+        
+        .plan-features {
+            padding: 20px;
+            background-color: #efe9e9;
+            border: 60% solid #418ee0;
+            border-top:#000000;
+        }
+        
+        .plan-features p {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 40%
+            color: #24232c;
+
+        }
+        .signup-btn {
+            display: block;
+            background: linear-gradient(to bottom, #e13de1, #418ee0);
+            text-align: center;
+            text-transform: capitalize; color: #000000;-webkit-text-stroke: 0.0005em rgb(255, 255, 255); 
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            
+        }
+        
+        .services {
+            background-color: #ece2e2;
+            color: rgb(255, 0, 0);
+            padding: 40px 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .service {
+            width: 100%;
+        }
+        
+        .service h3 {
+            margin-bottom: 20px;
+        }
+        
+        .service ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .service ul li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .service ul li:before {
+            content: "•";
+            color: #418ee0;
+            position: absolute;
+            left: 0;
+        }
+        
+        .service p {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 20px;
+            
+        }
+        .subtext {
+            font-size: 170%; 
+            font-weight: bold; 
+            background: linear-gradient(to bottom, #29517d, #f238ff); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            text-fill-color: transparent; 
+            -webkit-text-stroke: 0.008em rgb(255, 0, 0);
+}
+
+.panel {
+    -webkit-text-fill-color: transparent; (to right, #4CAF50, #02f70e); 
+    color: white; 
+}
+
+.hosting {
+    -webkit-text-fill-color: transparent; (to right, #2196F3, #64B5F6); /* Blue gradient */
+    color: white; /* Text color */
+}
+
+.service {
+    -webkit-text-fill-color: transparent; (to right, #FF9800, #FFB74D); /* Orange gradient */
+    color: white; /* Text color */
+}
+
+.support {
+    -webkit-text-fill-color: transparent; (to right, #ffffff, #ffffff);  
+    color: white;  
+}
+
+        
+         
+        footer {
+            background-color: #4b4848; 
+            color: white; 
+            padding: 80px 60px; 
+            min-height: 500px; 
+    position:absolute; 
+    bottom: 5; 
+    width: 100%; 
+        }
+        
+        .image-gallery {
+    display: flex;  
+    flex-wrap:nowrap; 
+    gap: 2%;  
+}
+
+.responsive-image {
+    width: 100%; /* Set a fixed width */
+    height: 110%; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 15px; /* Optional: Add rounded corners */
+}
+    </style>
+</head>
+<body>
+     
+    <header>
+        <div class="logo">
+            <img src="./Air box pics/TSP LOGO small.png" style="max-width:2cm;" alt="Airbox icon">
+            <div>
+                <h3>Tech Serve Pro</h3>
+                <p>Hosting Provider</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./1. ab main.html">Home</a></li>
+                <li><a href="#">Web Hosting</a></li>
+                <li><a href="#">Reseller Hosting</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     
+    <section class="hero">
+        <h3>24/7 Real Person</h3>
+        <h2>Customer Support</h2>
+        <h3>For all our clients</h3>
+        <h4>When you finally reach us, Our representatives are contractually obligated to sound confused by your entirely reasonable questions! All while stroking your eg and making you fee heard. Additionally our team expertly practices the ancient art of vanishing while on hold! YAY!
+        <BR></BR>
+        <a href="#" class="btn">Stop Calling Us</a>
+    </section>
+
+     
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">⚙️</div>
+            <h2>CONTROL</h2>
+            <h5 class="subtext panel">Panel</h5>
+            <p>Manage accounts through a web interface.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon" i>🌐</div>
+            <h2>MULTI-DOMAIN</h3>
+            <h5 class="subtext hosting">Hosting</h5>
+            <p>Multiple websites hosted on one account.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">☁️</div>
+            <h2>FTP</h2>
+            <h5 class="subtext service">Services</h5>
+            <p>Securely upload and manage files with FTP.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">📞</div>
+            <h2>DIRECT</h2>
+            <h5 class="subtext support">Support</h5>
+            <p>24/7 help from real technical experts instantly.</p>
+        </div>
+    </section>
+
+     
+    <section class="pricing">
+        <div class="plan">
+            <div class="plan-header">
+                <h3>Mini Hosting</h3>
+            </div>
+            <div class="plan-price">
+                $10.99 <span>/mo</span>
+            </div>
+            <div class="plan-features">
+                <p>10 GB BANDWIDTH</p>
+                <p>10 GB STORAGE</p>
+                <p>10 EMAIL ACCOUNTS</p>
+                <p>MOBILE READY</p>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+        <div class="plan">
+            <div class="plan-header">
+                <h3>User Hosting</h3>
+            </div>
+            <div class="plan-price">
+                $12.99 <span>/mo</span>
+            </div>
+            <div class="plan-features">
+                <p>40 GB BANDWIDTH</p>
+                <p>20 GB STORAGE</p>
+                <p>100 EMAIL ACCOUNTS</p>
+                <p>MOBILE READY</p>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+        <div class="plan">
+            <div class="plan-header">
+                <h3>Pro Hosting</h3>
+            </div>
+            <div class="plan-price">
+                $16.99 <span>/mo</span>
+            </div>
+            <div class="plan-features">
+                <p>80 GB BANDWIDTH</p>
+                <p>40 GB STORAGE</p>
+                <p>200 EMAIL ACCOUNTS</p>
+                <p>MOBILE READY</p>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+        <div class="plan">
+            <div class="plan-header">
+                <h3>Maxi Hosting</h3>
+            </div>
+            <div class="plan-price">
+                $20.99 <span>/mo</span>
+            </div>
+            <div class="plan-features">
+                <p>UNLIMITED BANDWIDTH</p>
+                <p>100 GB STORAGE</p>
+                <p>500 EMAIL ACCOUNTS</p>
+                <p>MOBILE READY</p>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+     
+    <section class="features2">
+        <div class="feature2">
+            <h5 class="subtext panel">Hosting Services</h5>
+            <ul style="color: white;">
+                <li>Shared Hosting</li>
+                <li>Cloud Cloud Hosting</li>
+                <li>Reseller Hosting</li>
+            </ul>
+            <br>
+            <h5 style=" color: #d1d1dc;">Manage accounts <br>through one interface.</f5>
+            <a href="#" class="signup-btn">Shop Now</a>
+        </div>
+        <div class="feature2">
+            <h5 class="subtext hosting">Server Solutions</h5>
+            <body>
+                <ul style="color: white;">
+                    <li>Dedicated Servers</li>
+                    <li>Dynamic Cloud Server</li>
+                    <li>Virtual Servers</li>
+                </ul>
+                <br>
+            </body>
+            <h5 style=" color: #d1d1dc;">Multiple sites <br> on one account.</h5>
+            <a href="#" class="signup-btn">Shop Now</a>
+        </div>
+        <div class="feature2">
+            <h5 class="subtext service">Email Solutions</h5>
+            <body>
+                <ul style="color: white;">
+                    <li>Instant Mail</li>
+                    <li>G Suite / Workspace</li>
+                    <li>Microsoft Exchange</li>
+                </ul>
+                <br>
+            </body>
+            
+            <h5 style="color: #d1d1dc;">Manage files <br>with FTP.</h5>
+            <a href="#" class="signup-btn">Shop Now</a>
+        </div>
+        <div class="feature2">
+            <h5 class="subtext support">More Products</h5>
+            <body>
+                <ul style="color: white;">
+                <li>SSL/TLS</li>
+                <li>Microsoft Sharepoint</li>
+                <li>G-Apps</li>
+            </ul>
+            <br>
+        </body>
+            <h5 style="color: #d1d1dc;">24/7 help from <br>real technical experts.</h5>
+            <a href="#" class="signup-btn">Shop Now</a>
+        </div>
+    </section>
+
+     
+    <footer>
+        <section class="image-gallery">
+            <img src="./Air box pics/1. WordPress-B&W-no background copy.png" alt="Image 1" class="responsive-image">
+            <img src="./Air box pics/2. magento-B&W GRADIENT no background.png" alt="Image 2" class="responsive-image">
+            <img src="./Air box pics/3. OpenCart-B&W no background.png" alt="Image 3" class="responsive-image">
+            <img src="./Air box pics/4. joomla-logo.png" alt="Image 4" class="responsive-image">
+            
+        </body>
+        </section>
+    </footer>
+</body>
+</html>
